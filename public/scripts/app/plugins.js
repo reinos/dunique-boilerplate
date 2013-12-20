@@ -187,6 +187,32 @@
     }
 
 })( jQuery, window, document );    
+<<<<<<< HEAD:public/scripts/plugins.js
+=======
+
+// Avoid `console` errors in browsers that lack a console.
+(function() {
+    var method;
+    var noop = function () {};
+    var methods = [
+        'assert', 'clear', 'count', 'debug', 'dir', 'dirxml', 'error',
+        'exception', 'group', 'groupCollapsed', 'groupEnd', 'info', 'log',
+        'markTimeline', 'profile', 'profileEnd', 'table', 'time', 'timeEnd',
+        'timeStamp', 'trace', 'warn'
+    ];
+    var length = methods.length;
+    var console = (window.console = window.console || {});
+
+    while (length--) {
+        method = methods[length];
+
+        // Only stub undefined methods.
+        if (!console[method]) {
+            console[method] = noop;
+        }
+    }
+}());
+>>>>>>> 8a3685f2b36a55d339740d517278f744bb9ddaa2:public/scripts/app/plugins.js
 
 /*!
  * Retina.js v1.1.0
